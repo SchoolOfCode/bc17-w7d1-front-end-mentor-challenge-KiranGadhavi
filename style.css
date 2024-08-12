@@ -1,0 +1,197 @@
+body{
+    background-color: rgb(254, 248, 238);
+    color: hsl(234, 12%, 34%);
+    box-sizing: border-box;
+    font: 500, 700;
+    font-size: 14px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 480px) {
+    /* Your mobile styles here */
+    .container {
+      flex-direction: column;
+      border: 1px solid none;
+      background-color: white;
+      /* margin: 1.5rem 0.4rem 1.5rem 0.4rem; */
+      border-radius: 0.5rem;
+    }
+    .text{
+        padding: 10px;
+    }
+    .heading {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #666;
+        opacity: 0.7;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.3em;
+    }
+    .text_heading{
+        font-size: 2rem;
+        color: black;
+        font-weight: 700;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+    .text_description{
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #666;
+        line-height: 1.5;
+        opacity: 0.7;
+        font-family: 'Poppins', sans-serif;
+    }
+    .prices {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+      }
+      
+      .Actual_price {
+        color: hsl(158, 36%, 37%);
+        font-weight: 700;
+        font-size: 2rem;
+        margin-right: 1rem;
+        /* font-family: 'Fraunces', serif; */
+      }
+      
+      .Previous_price {
+        font-size: 1rem;
+        font-weight: 100;
+        text-decoration: line-through;
+      }
+      .icon-cart{
+        margin-right: 0.5rem;
+      }
+    .btn{
+        padding: 15px;
+        color: white;
+        width: 100%;
+        border-radius: 0.5rem;
+        border: none;
+        margin-bottom: 1rem;
+        background-color: hsl(158, 36%, 37%)
+    }
+
+   .btn:hover {
+        background-color: hsl(158, 36%, 27%);
+      }
+     
+    .image-container {
+        width: 100%;
+        float: top;
+        height: auto;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+  }
+  @media screen and (min-width: 481px) {
+    /* Your desktop styles here */
+    
+  .container {
+      flex-direction: row;
+      border: 1px solid none;
+      background-color: white;
+      margin: 1.5rem 0.4rem 1.5rem 0.4rem;
+      border-radius: 0.5rem;
+    }
+    .text{
+        padding: 0 10px 0 10px;
+        
+    }
+    .heading {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #666;
+        opacity: 0.7;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.3em;
+    }
+    .text_heading{
+        font-size: 2rem;
+        color: black;
+        font-weight: 700;
+    }
+    .text_description{
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #666;
+        line-height: 1.5;
+        opacity: 0.7;
+        font-family: 'Poppins', sans-serif;
+    }
+        .prices {
+        display: flex;
+        align-items: center;
+        gap:0.2rem;
+      }
+
+        .Actual_price {
+        color: hsl(158, 36%, 37%);
+        font-weight: 700;
+        font-size: 2rem;
+        margin-right: 1rem;
+        /* font-family: 'Fraunces', serif; */
+        }
+        .Previous_price {
+        font-size: 1rem;
+        font-weight: 100;
+        text-decoration: line-through;
+        }
+        .icon-cart{
+        margin-right: 0.5rem;
+        }
+        .btn{
+        padding: 15px;
+        color: white;
+        width: 100%;
+        border-radius: 0.5rem;
+        border: none;
+        margin-bottom: 1rem;
+        background-color: hsl(158, 36%, 37%)
+        }
+        .btn:hover {
+        background-color: hsl(158, 36%, 27%);
+        }
+        .image-container {
+        width: 100%;
+        float: top;
+        height: auto;
+        border-radius: 0.5rem 0.5rem 0 0;
+        }
+        }
+      
+        
+        @media (min-width: 768px) {
+          .container {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid none;
+            background-color: white;
+            border-radius: 0.5rem;
+            max-width: 600px;
+            margin: 2rem auto;
+            position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+          }
+         
+          .text{
+            padding: 0 10px 0 10px;
+            float: right;
+          }
+          .image-container{
+            float: left;
+            border-radius: 0.5rem 0 0 0.5rem;
+            width: 100%;
+           height: 100%;
+           overflow: hidden;
+           } 
+           .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+
+        }
